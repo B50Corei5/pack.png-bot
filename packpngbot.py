@@ -6,14 +6,14 @@ from discord.ext import commands
 
 logging.basicConfig(level=logging.INFO)
 
-with open('auth.json') as data_file:
-    auth = json.load(data_file)
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('^'), description='Answering pack.png questions!')
-bot.remove_command("help")
+with open('auth.json') as data_file: # opens auth.json so i dont have the tokens in this file
+    auth = json.load(data_file) # loads the json
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('^'), description='Answering pack.png questions!') # sets the prefix+description of the bot
+bot.remove_command("help") # removes the help command because its not needed and the default one sucks
 @bot.event
-async def on_message(message):
+async def on_message(message): # every time a message is sent in the server
     if message.author.id != 667447141068832768: # prevents bot from going in a loop and responding to itself 
-        if message.channel.id == 666575359411748875 or message.channel.id == 666758275504537604 or message.channel.id == 666813360867770388 or message.channel.id == 660701994549379125: # channel ids
+        if message.channel.id == 666575359411748875 or message.channel.id == 666758275504537604 or message.channel.id == 666813360867770388 or message.channel.id == 660701994549379125: # will only do the following if the message is in these channels.
             # if 'word' in message.content.lower():  checks for word in message
             #     await message.channel.send("Hey, it looks like you mentioned word")  responds with this if its found
             if 'dream' in message.content.lower():
