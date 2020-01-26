@@ -12,7 +12,13 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or('^'), description='
 bot.remove_command("help") # removes the help command because its not needed and the default one sucks
 
 def FAQMessage_factory(bot, names, regexes, channel_whitelist, message):
-    """return cog classes, needed for cog name"""
+    """return cog classes, needed for cog name
+    
+    names: List of command names this FAQ Message is known as
+    regexes: list of regex r"" strings for matching non-command messages
+    channel_whitelist: list of channel ids to respond to
+    message: string of the message which the bot responds with
+    """
     
     class FAQMessage(commands.Cog, name=names[0]):
         def __init__(self, bot, names, regexes, channel_whitelist, message,):
