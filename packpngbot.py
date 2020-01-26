@@ -40,11 +40,11 @@ channels = [666575359411748875, 666758275504537604, 666813360867770388, 66070199
 faq_messages = [
     FAQMessage_factory(bot, ["dream", "dreams"], [r"dream.?s?.?method",], channels, "Hey, it looks like you mentioned Dream! Unfortunately we cannot use that method because we don't have enough information. But here's some other ideas: {link to a google doc}"),
     FAQMessage_factory(bot, ["theseed",], [r"seed.is"], channels, "Hey, it looks like you mentioned what the seed is! If you actually found the seed, please message a mod. If you're saying this as a joke, please dont :)")
-    # FAQMessage(bot, ["",], [r""], channels, "Hey, it looks like you mentioned trying a seed or method! There's lots of good information on https://packpng.com/faq and in ANNOUNCEMENTS CHANNEL")
-    # FAQMessage(bot, ["",], [r""], channels, "Hey, it looks like you mentioned supercomputer! Thankfully " + '<@459235187469975572>' + " is dedicating several supercomputers towards this!")
-    # FAQMessage(bot, ["",], [r""], channels, "Hey, it looks like you mentioned a quantum computer! Unfortunately this won't help with this problem and we already have enough computing power")
-    # FAQMessage(bot, ["",], [r""], channels, "Hey, it looks like you mentioned supercomputer! Thankfully " + '<@459235187469975572>' + " is dedicating several supercomputers towards this!")
-    # FAQMessage(bot, ["",], [r""], channels, "Hey, it looks like you mentioned a quantum computer! Unfortunately this won't help with this problem and we already have enough computing power")
+    # FAQMessage_factory(bot, ["",], [r""], channels, "Hey, it looks like you mentioned trying a seed or method! There's lots of good information on https://packpng.com/faq and in ANNOUNCEMENTS CHANNEL")
+    # FAQMessage_factory(bot, ["",], [r""], channels, "Hey, it looks like you mentioned supercomputer! Thankfully " + '<@459235187469975572>' + " is dedicating several supercomputers towards this!")
+    # FAQMessage_factory(bot, ["",], [r""], channels, "Hey, it looks like you mentioned a quantum computer! Unfortunately this won't help with this problem and we already have enough computing power")
+    # FAQMessage_factory(bot, ["",], [r""], channels, "Hey, it looks like you mentioned supercomputer! Thankfully " + '<@459235187469975572>' + " is dedicating several supercomputers towards this!")
+    # FAQMessage_factory(bot, ["",], [r""], channels, "Hey, it looks like you mentioned a quantum computer! Unfortunately this won't help with this problem and we already have enough computing power")
 ]
 
 
