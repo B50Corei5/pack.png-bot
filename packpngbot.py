@@ -13,7 +13,7 @@ async def on_ready():
     print('Bot is ready!') # conformation message once the bot successfully started up!
     return
 
-@clinet.command()
+@client.command()
 async def help(ctx):
     channel = ctx.message.channel
     embed = discord.embed(color=discord.Color.Red)
